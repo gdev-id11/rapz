@@ -1,0 +1,133 @@
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* FONT */
+@font-face {
+  font-family: 'fontgwe';
+  src: url('sale.ttf') format('truetype');
+}
+
+/* BODY */
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  color: white;
+  background: black;
+  font-family: system-ui, sans-serif;
+}
+
+/* APP (LOCK MOBILE WIDTH) */
+.app {
+  width: 100%;
+  max-width: 420px;
+  min-height: 100svh;
+  padding: 16px;
+  background-color: white;
+  box-shadow:
+    0 0 25px rgba(255, 255, 255, 0.25),
+    0 0 70px rgba(255, 255, 255, 0.18),
+    0 0 120px rgba(255, 255, 255, 0.10);
+}
+
+/* TITLE */
+.title {
+  text-align: center;
+  font-family: fontgwe;
+  font-size: 3rem;
+
+  background: linear-gradient(to right, #4facfe, #00f2ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* SUB TITLE */
+.teks2 {
+  margin-top: 8px;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: bold;
+
+  background: linear-gradient(to right, #4facfe, #00f2ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* SECTION TITLE */
+.teks1 {
+  margin: 32px 0 16px;
+  text-align: center;
+  font-family: fontgwe;
+  font-size: 2.2rem;
+
+  background: linear-gradient(to right, #4facfe, #00f2ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* CONTAINERS */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.container2 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+/* IMAGES */
+.pic {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* BUTTON BASE */
+.box,
+.box2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  border-radius: 12px;
+
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+/* SMALL BOX */
+.box {
+  width: 120px;
+  height: 120px;
+  font-size: 1.2rem;
+}
+
+/* BIG BOX */
+.box2 {
+  width: 100%;
+  max-width: 290px;
+  height: 250px;
+  font-size: 1.5rem;
+}
+
+/* ACTIVE EFFECT */
+.box:active,
+.box2:active {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+}
