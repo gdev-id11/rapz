@@ -4,7 +4,16 @@
   margin: 0;
   padding: 0;
 }
-
+@keyframes masuk {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 /* FONT */
 @font-face {
   font-family: 'fontgwe';
@@ -39,6 +48,7 @@ body {
   text-align: center;
   font-family: fontgwe;
   font-size: 3rem;
+  animation: masuk 1s ease-out forwards;
 
   background: linear-gradient(to right, #4facfe, #00f2ff);
   -webkit-background-clip: text;
@@ -51,7 +61,7 @@ body {
   text-align: center;
   font-size: 1.25rem;
   font-weight: bold;
-
+  animation: masuk 1s ease-out forwards;
   background: linear-gradient(to right, #4facfe, #00f2ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -63,7 +73,7 @@ body {
   text-align: center;
   font-family: fontgwe;
   font-size: 2.2rem;
-
+  animation: masuk 1s ease-out forwards;
   background: linear-gradient(to right, #4facfe, #00f2ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -90,6 +100,7 @@ body {
   max-width: 350px;
   height: auto;
   border-radius: 12px;
+  animation: masuk 1s ease-out forwards;
 }
 
 /* BUTTON BASE */
@@ -98,7 +109,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-
+  
   text-decoration: none;
   font-weight: bold;
   color: white;
@@ -115,6 +126,7 @@ body {
   width: 120px;
   height: 120px;
   font-size: 1.2rem;
+  animation: masuk 1s ease-out forwards;
 }
 
 /* BIG BOX */
@@ -123,8 +135,11 @@ body {
   max-width: 290px;
   height: 250px;
   font-size: 1.5rem;
+  animation: masuk 1s ease-out forwards;
 }
-
+.ani {
+  animation: masuk 1s ease-out forwards;
+}
 /* ACTIVE EFFECT */
 .box:active,
 .box2:active {
